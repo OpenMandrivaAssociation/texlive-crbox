@@ -1,3 +1,9 @@
+# revision 24414
+# category Package
+# catalog-ctan /macros/latex/contrib/crbox
+# catalog-date 2011-10-26 21:25:52 +0200
+# catalog-license lppl
+# catalog-version 0.1
 Name:		texlive-crbox
 Version:	0.1
 Release:	1
@@ -39,6 +45,7 @@ with crossing lines at the corners.
 %doc %{_texmfdistdir}/doc/latex/crbox/README
 %doc %{_texmfdistdir}/doc/latex/crbox/crbox-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/crbox/crbox-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -49,3 +56,5 @@ with crossing lines at the corners.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
