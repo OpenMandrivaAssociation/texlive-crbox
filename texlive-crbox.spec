@@ -1,12 +1,12 @@
-# revision 24414
+# revision 29803
 # category Package
 # catalog-ctan /macros/latex/contrib/crbox
-# catalog-date 2011-10-26 21:25:52 +0200
+# catalog-date 2013-04-04 12:47:47 +0200
 # catalog-license lppl
 # catalog-version 0.1
 Name:		texlive-crbox
 Version:	0.1
-Release:	2
+Release:	3
 Summary:	Boxes with crossed corners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/crbox
@@ -46,17 +46,3 @@ with crossing lines at the corners.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
-+ Revision: 750622
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 718164
-- texlive-crbox
-- texlive-crbox
-- texlive-crbox
-- texlive-crbox
-
