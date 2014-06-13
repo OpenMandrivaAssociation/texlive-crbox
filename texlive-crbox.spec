@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-crbox
 Version:	0.1
-Release:	7
+Release:	8
 Summary:	Boxes with crossed corners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/crbox
