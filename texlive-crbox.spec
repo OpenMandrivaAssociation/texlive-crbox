@@ -1,18 +1,12 @@
-# revision 29803
-# category Package
-# catalog-ctan /macros/latex/contrib/crbox
-# catalog-date 2013-04-04 12:47:47 +0200
-# catalog-license lppl
-# catalog-version 0.1
 Name:		texlive-crbox
-Version:	0.1
-Release:	12
+Version:	29803
+Release:	1
 Summary:	Boxes with crossed corners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/crbox
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crbox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crbox.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crbox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crbox.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ The package implements a \crbox command which produces boxes
 with crossing lines at the corners.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,7 +33,7 @@ with crossing lines at the corners.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
