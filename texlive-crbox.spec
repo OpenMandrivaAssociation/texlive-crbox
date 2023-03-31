@@ -1,6 +1,6 @@
 Name:		texlive-crbox
 Version:	29803
-Release:	1
+Release:	2
 Summary:	Boxes with crossed corners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/crbox
